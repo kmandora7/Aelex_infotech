@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | AELEX Premium Architectural Hardware</title>
+  <meta name="description" content="Explore AELEX's luxury architectural hardware catalogue featuring solid extruded brass hinges, sliding tower bolts, stainless steel fittings, and precision architectural accessories.">
+
+  <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="product-page-body">
+
+  <!-- ==========================================================================
+       1. SITE HEADER NAVIGATION (REUSED UNCHANGED FROM HOME/ABOUT)
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <a href="index.html" class="brand-logo" aria-label="AELEX Home">
+      <img src="assets/images/aelexLogo.png" alt="AELEX Logo Icon" class="brand-mark-img">
+      <div>
+        <span class="brand-name">AELEX</span>
+        <span class="brand-tagline">Living inspiration and innovative</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Menu -->
+    <nav aria-label="Primary Navigation">
+      <ul class="nav-menu">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item-dropdown">
+          <a href="products.html" class="nav-link active" aria-haspopup="true" aria-expanded="false">
+            Products
+            <svg class="dropdown-chevron" viewBox="0 0 10 6" width="10" height="6" aria-hidden="true">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" aria-label="Product Categories">
+            <li><a href="brass-hinges.html" class="dropdown-item">BRASS HINGES</a></li>
+            <li><a href="brass-tower-bolt.html" class="dropdown-item">BRASS TOWER BOLT</a></li>
+            <li><a href="steel-aluminium-fittings.html" class="dropdown-item">STEEL &amp; ALUMINIUM FITTINGS</a></li>
+          </ul>
+        </li>
+        <li><a href="quality.html" class="nav-link">Quality</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Minimal Header Action Button -->
+    <a href="contact.html" class="nav-cta-btn">Get In Touch</a>
+
+    <!-- Mobile Navigation Hamburger Toggle -->
+    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay Menu -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="mobile-nav-dropdown">
+        <div class="mobile-dropdown-header">
+          <a href="products.html" class="mobile-nav-link-main active">Products</a>
+          <button class="mobile-dropdown-toggle" aria-label="Toggle Product Submenu" aria-expanded="false">
+            <span class="toggle-icon">+</span>
+          </button>
+        </div>
+        <ul class="mobile-submenu" aria-label="Product Submenu">
+          <li><a href="brass-hinges.html" class="mobile-submenu-link">BRASS HINGES</a></li>
+          <li><a href="brass-tower-bolt.html" class="mobile-submenu-link">BRASS TOWER BOLT</a></li>
+          <li><a href="steel-aluminium-fittings.html" class="mobile-submenu-link">STEEL &amp; ALUMINIUM FITTINGS</a></li>
+        </ul>
+      </li>
+      <li><a href="quality.html">Quality</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <p class="mobile-drawer-contact">AELEX HARDWARE MANUFACTURER</p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. SECTION 1 — PRODUCT HERO
+ 
+       ========================================================================== -->
+  <section class="product-cinematic-hero" id="product-hero" aria-label="AELEX Architectural Hardware Hero Campaign">
+    
+    <!-- Cinematic Full-Bleed 3D Product Background Image & Left Protective Vignette Overlay -->
+    <div class="cinematic-hero-bg-wrap">
+      <img src="assets/images/sample.png" alt="AELEX 3D Architectural Hardware Environment" class="cinematic-hero-bg-img">
+      <div class="cinematic-vignette-overlay"></div>
+    </div>
+
+    <!-- Main Left-Aligned Text Content Overlay over Background Image -->
+    <div class="cinematic-hero-container">
+      <div class="cinematic-hero-content-box">
+        
+       
+
+        <h1 class="cinematic-hero-headline reveal-element delay-2">
+          BUILT TO<br> HOLD.<br>
+          DESIGNED TO<br> LAST.
+        </h1>
+
+        <p class="cinematic-hero-subtitle reveal-element delay-3">
+          Precision-crafted hardware that combines strength, durability and refined design for modern architectural spaces.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. RECREATED PRODUCT CONTENT SECTIONS (BETWEEN HERO AND FOOTER)
+       ========================================================================== -->
+  <div class="product-page-main-content">
+
+    <!-- ==========================================================================
+         SECTION 1 — EDITORIAL PRODUCT COLLECTION (ASYMMETRICAL LAYOUT)
+         ========================================================================== -->
+    <!-- ==========================================================================
+         SECTION 1 — CURATED SELECTION (3-CATEGORY ALTERNATING CIRCULAR ZIG-ZAG)
+         ========================================================================== -->
+    <section class="product-collection-editorial" id="product-collection" aria-label="AELEX Curated Product Selection">
+      
+      <!-- Faint Architectural Background Curves -->
+      <div class="editorial-bg-curves" aria-hidden="true">
+        <svg class="bg-curve-svg" viewBox="0 0 1400 1200" fill="none" preserveAspectRatio="xMidYMid slice">
+          <circle cx="-100" cy="200" r="700" stroke="rgba(23, 23, 23, 0.035)" stroke-width="1.5"/>
+          <circle cx="1500" cy="550" r="800" stroke="rgba(176, 141, 87, 0.06)" stroke-width="1.5"/>
+          <circle cx="-150" cy="1000" r="750" stroke="rgba(23, 23, 23, 0.035)" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <div class="product-editorial-container">
+        
+        <!-- Section Header -->
+        <div class="editorial-collection-header reveal-element">
+          <div class="clean-eyebrow">
+            <span class="eyebrow-brass-line"></span>
+            <span>CURATED SELECTION</span>
+          </div>
+          <h2 class="editorial-collection-title">Exceptional Hardware<br>for Inspired Spaces</h2>
+        </div>
+
+        <!-- 3-Category Alternating Zig-Zag Flow -->
+        <div class="zigzag-curated-flow">
+
+          <!-- Row 01: Brass Hinges (Left Visual, Right Content) -->
+          <div class="zigzag-row row-left-image">
+            <a href="brass-hinges.html" class="zigzag-image-col reveal-element reveal-left" aria-label="View Brass Hinges Collection">
+              <div class="product-circle-stage">
+                <!-- Radial Glow -->
+                <div class="circle-radial-glow"></div>
+
+                <!-- Axis / Crosshair Lines -->
+                <svg class="circle-axis-svg" viewBox="0 0 540 540" aria-hidden="true">
+                  <line x1="10" y1="270" x2="530" y2="270" stroke="rgba(176, 141, 87, 0.25)" stroke-dasharray="3 4" stroke-width="1"/>
+                  <line x1="270" y1="10" x2="270" y2="530" stroke="rgba(176, 141, 87, 0.25)" stroke-dasharray="3 4" stroke-width="1"/>
+                  <circle cx="10" cy="270" r="2.5" fill="#B08D57"/>
+                  <circle cx="530" cy="270" r="2.5" fill="#B08D57"/>
+                  <circle cx="270" cy="10" r="2.5" fill="#B08D57"/>
+                  <circle cx="270" cy="530" r="2.5" fill="#B08D57"/>
+                </svg>
+
+                <!-- Technical Outer Ring & Circular Typography -->
+                <svg class="circle-tech-ring-svg" viewBox="0 0 540 540" aria-hidden="true">
+                  <circle cx="270" cy="270" r="248" fill="none" stroke="rgba(29, 29, 27, 0.08)" stroke-width="1"/>
+                  <circle cx="270" cy="270" r="236" fill="none" stroke="rgba(176, 141, 87, 0.35)" stroke-width="1" stroke-dasharray="4 4"/>
+                  <circle cx="270" cy="34" r="3" fill="#B08D57"/>
+                  <circle cx="506" cy="270" r="3" fill="#B08D57"/>
+                  <circle cx="270" cy="506" r="3" fill="#B08D57"/>
+                  <circle cx="34" cy="270" r="3" fill="#B08D57"/>
+                  <path id="circlePath-1" d="M 270, 270 m -222, 0 a 222,222 0 1,1 444,0 a 222,222 0 1,1 -444,0" fill="none"/>
+                  <text class="circle-path-text">
+                    <textPath href="#circlePath-1" startOffset="0%">
+                      CRAFTED FOR INSPIRED SPACES · AELEX ARCHITECTURAL HARDWARE · PRECISION · PERFORMANCE · DESIGN ·
+                    </textPath>
+                  </text>
+                </svg>
+
+                <!-- Inner Circular Card -->
+                <div class="circle-inner-card">
+                  <!-- Architectural L-Block Backdrop -->
+                  <div class="arch-l-block" aria-hidden="true"></div>
+                  <!-- Floating Product Image -->
+                  <img src="assets/images/editorial-brass-hinge-cutout.jpg" alt="AELEX Brass Hinges" class="floating-product-img">
+                </div>
+              </div>
+            </a>
+
+            <div class="zigzag-text-col reveal-element reveal-right">
+              <div class="zigzag-num-badge">
+                <span class="zigzag-num">01</span>
+                <span class="num-line"></span>
+              </div>
+              <h3 class="zigzag-title">BRASS HINGES</h3>
+              <p class="zigzag-desc">
+                Precision-crafted brass hinges designed for smooth movement, durability and refined architectural applications.
+              </p>
+              <a href="brass-hinges.html" class="zigzag-explore-link">
+                <span>EXPLORE COLLECTION</span>
+                <svg class="asym-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Horizontal Divider -->
+          <div class="zigzag-divider" aria-hidden="true"></div>
+
+          <!-- Row 02: Brass Tower Bolt (Left Content, Right Visual) -->
+          <div class="zigzag-row row-right-image">
+            <div class="zigzag-text-col reveal-element reveal-left">
+              <div class="zigzag-num-badge">
+                <span class="zigzag-num">02</span>
+                <span class="num-line"></span>
+              </div>
+              <h3 class="zigzag-title">BRASS TOWER BOLT</h3>
+              <p class="zigzag-desc">
+                Reliable architectural hardware engineered for secure, smooth and long-lasting operation.
+              </p>
+              <a href="brass-tower-bolt.html" class="zigzag-explore-link">
+                <span>EXPLORE COLLECTION</span>
+                <svg class="asym-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+
+            <a href="brass-tower-bolt.html" class="zigzag-image-col reveal-element reveal-right" aria-label="View Brass Tower Bolt Collection">
+              <div class="product-circle-stage">
+                <!-- Radial Glow -->
+                <div class="circle-radial-glow"></div>
+
+                <!-- Axis / Crosshair Lines -->
+                <svg class="circle-axis-svg" viewBox="0 0 540 540" aria-hidden="true">
+                  <line x1="10" y1="270" x2="530" y2="270" stroke="rgba(176, 141, 87, 0.25)" stroke-dasharray="3 4" stroke-width="1"/>
+                  <line x1="270" y1="10" x2="270" y2="530" stroke="rgba(176, 141, 87, 0.25)" stroke-dasharray="3 4" stroke-width="1"/>
+                  <circle cx="10" cy="270" r="2.5" fill="#B08D57"/>
+                  <circle cx="530" cy="270" r="2.5" fill="#B08D57"/>
+                  <circle cx="270" cy="10" r="2.5" fill="#B08D57"/>
+                  <circle cx="270" cy="530" r="2.5" fill="#B08D57"/>
+                </svg>
+
+                <!-- Technical Outer Ring & Circular Typography -->
+                <svg class="circle-tech-ring-svg" viewBox="0 0 540 540" aria-hidden="true">
+                  <circle cx="270" cy="270" r="248" fill="none" stroke="rgba(29, 29, 27, 0.08)" stroke-width="1"/>
+                  <circle cx="270" cy="270" r="236" fill="none" stroke="rgba(176, 141, 87, 0.35)" stroke-width="1" stroke-dasharray="4 4"/>
+                  <circle cx="270" cy="34" r="3" fill="#B08D57"/>
+                  <circle cx="506" cy="270" r="3" fill="#B08D57"/>
+                  <circle cx="270" cy="506" r="3" fill="#B08D57"/>
+                  <circle cx="34" cy="270" r="3" fill="#B08D57"/>
+                  <path id="circlePath-2" d="M 270, 270 m -222, 0 a 222,222 0 1,1 444,0 a 222,222 0 1,1 -444,0" fill="none"/>
+                  <text class="circle-path-text">
+                    <textPath href="#circlePath-2" startOffset="0%">
+                      CRAFTED FOR INSPIRED SPACES · AELEX ARCHITECTURAL HARDWARE · PRECISION · PERFORMANCE · DESIGN ·
+                    </textPath>
+                  </text>
+                </svg>
+
+                <!-- Inner Clean Circular Card -->
+                <div class="circle-inner-card">
+                  <!-- Architectural L-Block Backdrop -->
+                  <div class="arch-l-block" aria-hidden="true"></div>
+                  <!-- Floating Product Image -->
+                  <img src="assets/images/editorial-tower-bolt-cutout.jpg" alt="AELEX Brass Tower Bolt" class="floating-product-img floating-product-img--bolt">
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Horizontal Divider -->
+          <div class="zigzag-divider" aria-hidden="true"></div>
+
+          <!-- Row 03: Steel & Aluminium Fittings (Left Visual, Right Content) -->
+          <div class="zigzag-row row-left-image">
+            <a href="steel-aluminium-fittings.html" class="zigzag-image-col reveal-element reveal-left" aria-label="View Steel &amp; Aluminium Fittings Collection">
+              <div class="product-circle-stage">
+                <!-- Radial Glow -->
+                <div class="circle-radial-glow"></div>
+
+                <!-- Axis / Crosshair Lines -->
+                <svg class="circle-axis-svg" viewBox="0 0 540 540" aria-hidden="true">
+                  <line x1="10" y1="270" x2="530" y2="270" stroke="rgba(176, 141, 87, 0.25)" stroke-dasharray="3 4" stroke-width="1"/>
+                  <line x1="270" y1="10" x2="270" y2="530" stroke="rgba(176, 141, 87, 0.25)" stroke-dasharray="3 4" stroke-width="1"/>
+                  <circle cx="10" cy="270" r="2.5" fill="#B08D57"/>
+                  <circle cx="530" cy="270" r="2.5" fill="#B08D57"/>
+                  <circle cx="270" cy="10" r="2.5" fill="#B08D57"/>
+                  <circle cx="270" cy="530" r="2.5" fill="#B08D57"/>
+                </svg>
+
+                <!-- Technical Outer Ring & Circular Typography -->
+                <svg class="circle-tech-ring-svg" viewBox="0 0 540 540" aria-hidden="true">
+                  <circle cx="270" cy="270" r="248" fill="none" stroke="rgba(29, 29, 27, 0.08)" stroke-width="1"/>
+                  <circle cx="270" cy="270" r="236" fill="none" stroke="rgba(176, 141, 87, 0.35)" stroke-width="1" stroke-dasharray="4 4"/>
+                  <circle cx="270" cy="34" r="3" fill="#B08D57"/>
+                  <circle cx="506" cy="270" r="3" fill="#B08D57"/>
+                  <circle cx="270" cy="506" r="3" fill="#B08D57"/>
+                  <circle cx="34" cy="270" r="3" fill="#B08D57"/>
+                  <path id="circlePath-3" d="M 270, 270 m -222, 0 a 222,222 0 1,1 444,0 a 222,222 0 1,1 -444,0" fill="none"/>
+                  <text class="circle-path-text">
+                    <textPath href="#circlePath-3" startOffset="0%">
+                      CRAFTED FOR INSPIRED SPACES · AELEX ARCHITECTURAL HARDWARE · PRECISION · PERFORMANCE · DESIGN ·
+                    </textPath>
+                  </text>
+                </svg>
+
+                <!-- Inner Clean Circular Card -->
+                <div class="circle-inner-card">
+                  <!-- Architectural L-Block Backdrop -->
+                  <div class="arch-l-block" aria-hidden="true"></div>
+                  <!-- Floating Product Image -->
+                  <img src="assets/images/editorial-steel-fitting-cutout.jpg" alt="AELEX Steel &amp; Aluminium Fittings" class="floating-product-img">
+                </div>
+              </div>
+            </a>
+
+            <div class="zigzag-text-col reveal-element reveal-right">
+              <div class="zigzag-num-badge">
+                <span class="zigzag-num">03</span>
+                <span class="num-line"></span>
+              </div>
+              <h3 class="zigzag-title">STEEL &amp; ALUMINIUM FITTINGS</h3>
+              <p class="zigzag-desc">
+                Strong, refined fittings designed to deliver reliable performance across modern architectural applications.
+              </p>
+              <a href="steel-aluminium-fittings.html" class="zigzag-explore-link">
+                <span>EXPLORE COLLECTION</span>
+                <svg class="asym-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /.zigzag-curated-flow -->
+      </div><!-- /.product-editorial-container -->
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2 — PRODUCT CATEGORY SHOWCASE 01: SOLID BRASS HINGES
+         ========================================================================== -->
+    <section class="category-showcase-section" id="cat-hinges" aria-label="AELEX Solid Brass Hinges Showcase">
+      <div class="showcase-container">
+        <div class="showcase-card-grid">
+          <div class="showcase-content-col reveal-left">
+            <div class="clean-eyebrow">
+              <span class="eyebrow-brass-line"></span>
+              <span>CATEGORY 01</span>
+            </div>
+            <h2 class="showcase-category-title">SOLID EXTRUDED BRASS HINGES</h2>
+            <p class="showcase-description">
+              Precision-machined from solid virgin brass billets to deliver exceptional structural rigidity, friction-free rotation, and silent long-term endurance. Designed for luxury interior doors and heavy architectural timber entrances.
+            </p>
+            <!-- <div class="showcase-spec-grid">
+              <div class="spec-pill">
+                <span class="spec-label">MATERIAL</span>
+                <span class="spec-val">Extruded Brass Alloys</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-label">BEARING</span>
+                <span class="spec-val">Ball Bearing / Washer</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-label">FINISHES</span>
+                <span class="spec-val">Satin, Antique, Polished</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="showcase-visual-col reveal-right">
+            <div class="showcase-img-card">
+              <img src="assets/images/editorial-brass-hinge.png" alt="AELEX Solid Extruded Brass Hinges Detailed View" class="showcase-img">
+              <div class="showcase-badge">PRECISION SPECIFICATION</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3 — PRODUCT CATEGORY SHOWCASE 02: SLIDING TOWER BOLTS
+         ========================================================================== -->
+    <section class="category-showcase-section alt-bg" id="cat-tower-bolts" aria-label="AELEX Tower Bolts Showcase">
+      <div class="showcase-container">
+        <div class="showcase-card-grid reverse-grid">
+          <div class="showcase-visual-col reveal-left">
+            <div class="showcase-img-card">
+              <img src="assets/images/editorial-tower-bolt-cutout.jpg" alt="AELEX Solid Brass Sliding Tower Bolts View" class="showcase-img">
+              <div class="showcase-badge">HEAVY DUTY LOCKING</div>
+            </div>
+          </div>
+          <div class="showcase-content-col reveal-right">
+            <div class="clean-eyebrow">
+              <span class="eyebrow-brass-line"></span>
+              <span>CATEGORY 02</span>
+            </div>
+            <h2 class="showcase-category-title">SLIDING TOWER BOLTS</h2>
+            <p class="showcase-description">
+              Engineered for security and smooth tactile slide operation. Featuring heavy-section brass rods, concealed fixings, and precision guide channels that eliminate rattle and play.
+            </p>
+            <!-- <div class="showcase-spec-grid">
+              <div class="spec-pill">
+                <span class="spec-label">MECHANISM</span>
+                <span class="spec-val">Precision Friction Lock</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-label">PROFILE</span>
+                <span class="spec-val">Bevel Edge Architecture</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-label">SIZES</span>
+                <span class="spec-val">4&quot; to 24&quot; Lengths</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4 — PRODUCT CATEGORY SHOWCASE 03: HANDLES & MORTISE LOCKS
+         ========================================================================== -->
+    <section class="category-showcase-section" id="cat-handles" aria-label="AELEX Handles and Locks Showcase">
+      <div class="showcase-container">
+        <div class="showcase-card-grid">
+          <div class="showcase-content-col reveal-left">
+            <div class="clean-eyebrow">
+              <span class="eyebrow-brass-line"></span>
+              <span>CATEGORY 03</span>
+            </div>
+            <h2 class="showcase-category-title">STEEL &amp; ALUMINUM FITTING</h2>
+            <p class="showcase-description">
+              Ergonomically sculptured door handles and high-security mortise locksets. Crafted to harmonize tactile luxury with dependable mechanical resistance for modern residential and commercial entryways.
+            </p>
+            <!-- <div class="showcase-spec-grid">
+              <div class="spec-pill">
+                <span class="spec-label">TYPE</span>
+                <span class="spec-val">Lever / Pull / Mortise</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-label">LATCH</span>
+                <span class="spec-val">Quiet Reversible Bolt</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-label">SECURITY</span>
+                <span class="spec-val">Euro Profile Cylinder</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="showcase-visual-col reveal-right">
+            <div class="showcase-img-card">
+              <img src="assets/images/editorial-steel-fitting-cutout.jpg" alt="AELEX Architectural Handles & Locks Showcase" class="showcase-img">
+              <div class="showcase-badge">TACTILE ELEGANCE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5 — PRODUCT CATEGORY SHOWCASE 04: STEEL & ALUMINUM FITTINGS
+         ========================================================================== -->
+  
+    <!-- ==========================================================================
+         SECTION 7 — PROFESSIONAL PRODUCT SLIDER (BEFORE FOOTER)
+         ========================================================================== -->
+    <!-- ==========================================================================
+         SECTION 7 — AELEX PRODUCT RANGE SLIDER (6 PRODUCT CARDS)
+         ========================================================================== -->
+    <section class="product-slider-section" id="product-slider" aria-label="AELEX Product Range Carousel">
+      <div class="product-slider-container">
+        
+        <!-- Section Header with Navigation Controls -->
+        <div class="slider-header-wrap reveal-element">
+          <div class="slider-header-text">
+            <div class="clean-eyebrow">
+              <span class="eyebrow-brass-line"></span>
+              <span>AELEX HARDWARE</span>
+            </div>
+            <h2 class="slider-heading">PRODUCT RANGE</h2>
+            <p class="slider-subtext">ENGINEERED HARDWARE FOR MODERN SPACES</p>
+          </div>
+
+          <!-- Top-Right Navigation Arrow Controls (No Overlap) -->
+          <div class="slider-nav-controls">
+            <button class="slider-nav-btn prev-nav-btn" id="prod-slider-prev" aria-label="Previous products">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="slider-nav-btn next-nav-btn" id="prod-slider-next" aria-label="Next products">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Carousel Viewport & Cards Track -->
+        <div class="slider-viewport" id="prod-slider-viewport" tabindex="0" aria-label="Product Range Carousel">
+          <div class="slider-track" id="prod-slider-track">
+            
+            <!-- Card 1: Solid Brass Hinges -->
+            <article class="slider-card-item reveal-element delay-1">
+              <div class="card-img-area">
+                <div class="card-img-lighting"></div>
+                <img src="assets/images/slide-1-brass-hinge.png" alt="AELEX Solid Extruded Brass Hinges" class="card-product-img" loading="lazy">
+              </div>
+              <div class="card-info-area">
+                <div class="card-text-block">
+                  <h3 class="card-product-name">BRASS HINGES</h3>
+                  <p class="card-product-sub">Precision architectural hinges</p>
+                </div>
+                <a href="brass-hinges.html" class="card-explore-btn" aria-label="Explore Brass Hinges">
+                  <span>EXPLORE</span>
+                  <svg class="explore-arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 2: Brass Tower Bolt -->
+            <article class="slider-card-item reveal-element delay-2">
+              <div class="card-img-area">
+                <div class="card-img-lighting"></div>
+                <img src="assets/images/tworeblot_slider.jpg" alt="AELEX Solid Brass Security Tower Bolt" class="card-product-img" loading="lazy">
+              </div>
+              <div class="card-info-area">
+                <div class="card-text-block">
+                  <h3 class="card-product-name">BRASS TOWER BOLT</h3>
+                  <p class="card-product-sub">Reliable heavy-duty security lock</p>
+                </div>
+                <a href="brass-tower-bolt.html" class="card-explore-btn" aria-label="Explore Brass Tower Bolts">
+                  <span>EXPLORE</span>
+                  <svg class="explore-arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 3: Steel & Aluminium Fittings -->
+            <article class="slider-card-item reveal-element delay-3">
+              <div class="card-img-area">
+                <div class="card-img-lighting"></div>
+                <img src="assets/images/steel_tworebot.jpg" alt="AELEX Steel and Aluminium Architectural Fittings" class="card-product-img" loading="lazy">
+              </div>
+              <div class="card-info-area">
+                <div class="card-text-block">
+                  <h3 class="card-product-name">STEEL &amp; ALUMINIUM FITTINGS</h3>
+                  <p class="card-product-sub">High-performance modern fittings</p>
+                </div>
+                <a href="steel-aluminium-fittings.html" class="card-explore-btn" aria-label="Explore Steel & Aluminium Fittings">
+                  <span>EXPLORE</span>
+                  <svg class="explore-arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 4: Premium Brass Hinges -->
+            <article class="slider-card-item reveal-element delay-4">
+              <div class="card-img-area">
+                <div class="card-img-lighting"></div>
+                <img src="assets/images/steel_backround (1).png" alt="AELEX Extruded Solid Brass Bearing Hinge" class="card-product-img" loading="lazy">
+              </div>
+              <div class="card-info-area">
+                <div class="card-text-block">
+                  <h3 class="card-product-name">PREMIUM BRASS HINGES</h3>
+                  <p class="card-product-sub">Extruded solid brass bearing hinge</p>
+                </div>
+                <a href="brass-hinges.html" class="card-explore-btn" aria-label="Explore Premium Brass Hinges">
+                  <span>EXPLORE</span>
+                  <svg class="explore-arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 5: Architectural Tower Bolts -->
+            <article class="slider-card-item reveal-element delay-5">
+              <div class="card-img-area">
+                <div class="card-img-lighting"></div>
+                <img src="assets/images/editorial-tower-bolt-cutout.jpg" alt="AELEX Architectural Heavy Duty Tower Bolt" class="card-product-img" loading="lazy">
+              </div>
+              <div class="card-info-area">
+                <div class="card-text-block">
+                  <h3 class="card-product-name">ARCHITECTURAL TOWER BOLTS</h3>
+                  <p class="card-product-sub">Precision friction slide bolt</p>
+                </div>
+                <a href="brass-tower-bolt.html" class="card-explore-btn" aria-label="Explore Architectural Tower Bolts">
+                  <span>EXPLORE</span>
+                  <svg class="explore-arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 6: Aluminium / Steel Hardware Fittings -->
+            <article class="slider-card-item reveal-element delay-6">
+              <div class="card-img-area">
+                <div class="card-img-lighting"></div>
+                <img src="assets/images/editorial-steel-fitting-cutout.jpg" alt="AELEX Modern Hardware Fittings" class="card-product-img" loading="lazy">
+              </div>
+              <div class="card-info-area">
+                <div class="card-text-block">
+                  <h3 class="card-product-name">HARDWARE FITTINGS</h3>
+                  <p class="card-product-sub">Precision architectural accessories</p>
+                </div>
+                <a href="steel-aluminium-fittings.html" class="card-explore-btn" aria-label="Explore Hardware Fittings">
+                  <span>EXPLORE</span>
+                  <svg class="explore-arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+          </div><!-- /.slider-track -->
+        </div><!-- /.slider-viewport -->
+
+        <!-- Pagination Dots Indicator -->
+        <div class="slider-dots-wrap" id="prod-slider-dots">
+          <!-- JS will populate dots dynamically -->
+        </div>
+
+      </div><!-- /.product-slider-container -->
+    </section>
+
+  </div><!-- /.product-page-main-content -->
+
+  <!-- ==========================================================================
+       7. SITE FOOTER (REUSED UNCHANGED FROM HOME/ABOUT)
+       ========================================================================== -->
+  <footer class="site-footer" id="contact" aria-label="AELEX Corporate Footer">
+    <div class="footer-container">
+      
+      <!-- Top 4-Column Grid -->
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand & Philosophy -->
+        <div class="footer-col footer-col-brand reveal-element delay-1">
+          <a href="index.html" class="footer-logo" aria-label="AELEX Home">
+            <img src="assets/images/aelexLogo.png" alt="AELEX Logo Icon" class="footer-mark-img">
+            <div>
+              <span class="footer-brand-name">AELEX</span>
+              <span class="footer-brand-tag">Architectural Hardware</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Architectural hardware crafted for inspired spaces. Engineered for smooth movement, lasting endurance, and refined aesthetic distinction.
+          </p>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-col footer-col-nav reveal-element delay-2">
+          <h3 class="footer-col-title">NAVIGATION</h3>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About AELEX</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="quality.html">Quality</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Business Contact -->
+        <div class="footer-col footer-col-contact reveal-element delay-3">
+          <h3 class="footer-col-title">CONTACT</h3>
+          <div class="footer-contact-details">
+            <div class="contact-item">
+              <span class="contact-label">INQUIRIES</span>
+              <a href="mailto:shreenathjimetal489@gmail.com" class="contact-value">shreenathjimetal489@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">SALES &amp; SPECIFICATION</span>
+              <a href="tel:9913408752" class="contact-value">9913408752</a>
+              <a href="tel:9909308752" class="contact-value">9909308752</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 4: Location / HQ -->
+        <div class="footer-col footer-col-location reveal-element delay-4">
+          <h3 class="footer-col-title">HEADQUARTERS</h3>
+          <address class="footer-address">
+            <p class="address-name">AELEX Hardware Manufacturer</p>
+            <p class="address-line">PLOT NO 3893,-Y,GIDC,PHASE-3,DARED,JAMNAGAR-GUJARAT,INDIA</p>
+          </address>
+        </div>
+
+      </div><!-- /.footer-grid -->
+
+      <!-- Horizontal Divider -->
+      <div class="footer-divider reveal-element delay-3"></div>
+
+      <!-- Bottom Row: Copyright & Legal -->
+      <div class="footer-bottom reveal-element delay-4">
+        <p class="copyright-text">&copy; 2026 AELEX ARCHITECTURAL HARDWARE. ALL RIGHTS RESERVED.</p>
+        <div class="footer-legal-links">
+          <span class="legal-tag">PRECISION MANUFACTURING</span>
+        </div>
+      </div>
+
+    </div><!-- /.footer-container -->
+  </footer><!-- /.site-footer -->
+
+  <!-- JavaScript Controller -->
+  <script src="js/hero-slider.js"></script>
+</body>
+</html>
