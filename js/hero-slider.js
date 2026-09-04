@@ -201,11 +201,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = mobileDrawer.classList.contains('open');
       if (isOpen) {
         mobileDrawer.classList.remove('open');
+        mobileDrawer.setAttribute('aria-hidden', 'true');
         mobileToggle.classList.remove('open');
         mobileToggle.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
       } else {
         mobileDrawer.classList.add('open');
+        mobileDrawer.setAttribute('aria-hidden', 'false');
         mobileToggle.classList.add('open');
         mobileToggle.setAttribute('aria-expanded', 'true');
         document.body.style.overflow = 'hidden';
@@ -240,6 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
         mobileDrawer.classList.remove('open');
+        mobileDrawer.setAttribute('aria-hidden', 'true');
         mobileToggle.classList.remove('open');
         mobileToggle.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';

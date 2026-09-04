@@ -813,11 +813,12 @@
   function initSizeDialog() {
     // Prevent duplicate initialization across scripts or dynamic events
     if (window.aelexProductDialogInitialized || window.__aelexSizeDialogControllerInitialized) return;
-    window.aelexProductDialogInitialized = true;
-    window.__aelexSizeDialogControllerInitialized = true;
 
     const dialogOverlay = document.getElementById('aelex-size-dialog');
     if (!dialogOverlay) return;
+
+    window.aelexProductDialogInitialized = true;
+    window.__aelexSizeDialogControllerInitialized = true;
 
     const dialogCloseBtn = document.getElementById('aelex-dialog-close');
     const dialogCategory = document.querySelector('.aelex-dialog-category');
@@ -941,6 +942,8 @@
 
     // 4. UNIFIED PRODUCT CLICK DELEGATION HANDLER (RESPONSIVE VIEWPORT DELEGATION)
     function handleProductTrigger(e) {
+      if (e.target.closest('#mobile-nav-drawer') || e.target.closest('#aelex-size-dialog')) return;
+
       const isMobileOrTablet = window.innerWidth <= 1024;
 
       if (isMobileOrTablet) {
