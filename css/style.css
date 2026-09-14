@@ -5829,7 +5829,9 @@ a:focus-visible {
   text-decoration: none;
   position: relative;
 }
-
+.resize_image{
+  height: 480px;
+}
 /* Circular Stage Container */
 .product-circle-stage {
   position: relative;
