@@ -1519,11 +1519,13 @@ a:focus-visible {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transform-origin: center center;
   width: 360px;
   height: 360px;
   pointer-events: none;
   z-index: 3;
   animation: spinSlow 40s linear infinite;
+  will-change: transform;
 }
 
 @keyframes spinSlow {
@@ -1836,7 +1838,8 @@ a:focus-visible {
   }
 
   .curved-text-wrapper {
-    display: none;
+    width: 280px;
+    height: 280px;
   }
 
   .secondary-accent-1 {
@@ -2986,6 +2989,10 @@ a:focus-visible {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
+  }
+
+  .curved-text-wrapper {
+    animation: none;
   }
 }
 
@@ -5145,7 +5152,16 @@ a:focus-visible {
     max-width: 320px;
     margin: 0 auto;
   }
-
+  
+  .resize_image{
+    width: 100%;
+    height: 250px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
   .asym-image-box {
     width: 100%;
     height: 250px;
