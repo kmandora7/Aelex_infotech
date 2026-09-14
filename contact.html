@@ -145,12 +145,12 @@
           <div class="contact-quick-info">
             <div class="quick-info-item">
               <span class="quick-info-label">EMAIL ENQUIRIES</span>
-              <a href="mailto:info@aelex.com" class="quick-info-val">info@aelex.com</a>
+              <a href="mailto:info@aelexhardware.com" class="quick-info-val">info@aelexhardware.com</a>
             </div>
             <div class="quick-info-item">
               <span class="quick-info-label">PHONE / WHATSAPP</span>
-              <a href="tel:9913408752" class="quick-info-val">9913408752</a>
-              <a href="tel:9909308752" class="quick-info-val">9909308752</a>
+              <a href="tel:+919913408752" class="quick-info-val">+91 9913408752</a>
+              <a href="tel:+919909308752" class="quick-info-val">+91 9909308752</a>
             </div>
             <div class="quick-info-item">
               <span class="quick-info-label">MANUFACTURING HQ</span>
@@ -286,11 +286,11 @@
         <div class="cta-bar-info">
           <span class="cta-bar-title">HAVE AN ENQUIRY?</span>
           <div class="cta-bar-details">
-            <a href="mailto:info@aelex.com" class="cta-link">info@aelex.com</a>
+            <a href="mailto:info@aelexhardware.com" class="cta-link">info@aelexhardware.com</a>
             <span class="cta-separator">|</span>
-            <a href="tel:9913408752" class="cta-link">9913408752</a>
+            <a href="tel:+919913408752" class="cta-link">+91 9913408752</a>
             <span class="cta-slash">/</span>
-            <a href="tel:9909308752" class="cta-link">9909308752</a>
+            <a href="tel:+919909308752" class="cta-link">+91 9909308752</a>
           </div>
         </div>
 
@@ -346,12 +346,12 @@
           <div class="footer-contact-details">
             <div class="contact-item">
               <span class="contact-label">INQUIRIES</span>
-              <a href="mailto:info@aelex.com" class="contact-value">info@aelex.com</a>
+              <a href="mailto:info@aelexhardware.com" class="contact-value">info@aelexhardware.com</a>
             </div>
             <div class="contact-item">
               <span class="contact-label">SALES &amp; SPECIFICATION</span>
-              <a href="tel:9913408752" class="contact-value">9913408752</a>
-              <a href="tel:9909308752" class="contact-value">9909308752</a>
+              <a href="tel:+919913408752" class="contact-value">+91 9913408752</a>
+              <a href="tel:+919909308752" class="contact-value">+91 9909308752</a>
             </div>
           </div>
         </div>
@@ -464,9 +464,25 @@
         }
 
         if (isValid) {
+          // EmailJS / Enquiry Email Recipient Configuration
+          const recipientEmail = 'info@aelexhardware.com';
+          const templateParams = {
+            to_email: recipientEmail,
+            recipient: recipientEmail,
+            from_name: fullNameInput.value.trim(),
+            from_email: emailInput.value.trim(),
+            reply_to: emailInput.value.trim(),
+            phone: phoneInput.value.trim(),
+            message: messageInput.value.trim()
+          };
+
+          if (typeof emailjs !== 'undefined') {
+            emailjs.send('service_aelex', 'template_aelex', templateParams);
+          }
+
           if (statusBox) {
             statusBox.className = 'form-status-box success';
-            statusBox.textContent = 'Thank you for reaching out. Your inquiry has been validated and recorded.';
+            statusBox.textContent = 'Thank you for reaching out. Your inquiry has been sent to info@aelexhardware.com.';
           }
           form.reset();
         } else {
